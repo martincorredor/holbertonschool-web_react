@@ -7,3 +7,8 @@ export interface Teacher {
 	location: string;
 	[propName: string]: any;
 }
+
+//=========== Extending the Teacher class ===============
+export interface Directors extends Teacher {
+	numberOfReports: number;
+}
