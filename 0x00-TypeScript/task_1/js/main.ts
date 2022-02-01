@@ -35,3 +35,14 @@ export const StudentClass: StudentConstructor = class StudentClass implements St
 	workOnHomework() { return 'Currently working'; }
 	displayName() { return this.firstName; }
 }
+
+export interface StudentClassInterface {
+	readonly firstName: string;
+	readonly lastName: string;
+	workOnHomework(): string;
+	displayName(): string;
+}
+
+export interface StudentConstructor {
+	new(firstName: string, lastName: string): StudentClassInterface;
+}
