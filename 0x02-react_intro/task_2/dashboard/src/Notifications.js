@@ -14,7 +14,7 @@ const Notifications = () => {
 		<div className='Notifications'>
 			<p style={{ display: 'inline' }}>Here is the list of notifications</p>
 			<button style={{ float: 'right' }} aria-label="Close" onClick={clickClose}>
-				<img src={icon} alt="" style={{ height: '3vh'}} />
+				<img src={icon} alt="" style={{ height:'3vh'}} />
 			</button>
 			<ul>
 				<li data-priority="default">New course available</li>
